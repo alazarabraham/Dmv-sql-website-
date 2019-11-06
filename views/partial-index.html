@@ -1,0 +1,18 @@
+<!-- <h1>Hello world</h1> -->
+
+<div class="container">
+    <div class="row">
+        ${data.map(dmv => `
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src="${dmv.picture}" class="card-img-top" alt="..." height="250px" width="300px">
+                <div class="card-body">
+                    <h5 class="card-title">${dmv.name}</h5>
+                    <p class="card-text">${dmv.address}</p>
+                    <a href="#" class="btn btn-danger">Review!</a>
+                </div>
+            </div>
+        </div>
+        `).join('')}
+    </div>
+</div>

@@ -1,0 +1,51 @@
+11:01 AM 10/25/2019notes 10-22-2019
+APPLE CEOS 
+*PSQL
+*NODE- using node to run express
+*EXPRESS- mvc framwork -----web server--when server side refreshes, u need to refresh the client side w a redirect ------------------works same way as php would----server generates the page, the browser simply shows what the server has generated  
+<form> == ACTION - SENDS TO ROUTE AND DOES A POST 
+AND METHOD - POST METHOD
+NAME/YEAR TEXT INPUT -sending a request (req.body)
+
+class survey
+psql 
+node 
+express 
+SELECT/RADIO BUTTONS 
+
+express --view=none
+npm install
+npm i express-es6-template-engine --save
+npm install bcryptjs
+npm install pg-promise
+npm install session-file-store
+npm install express-session
+
+CRUD
+CREATE -- POST -- INSERT
+READ --GET -- SELECT 
+UPDATE -- PUT-UPDATE 
+DELETE -- 
+
+password :
+Ilovecode1
+
+
+sudo -u postgres psql
+psql -h alazardb.cbrmvt4xovgv.us-east-2.rds.amazonaws.com -U postgres
+
+
+***************************************************************************************************
+index.js backendboxer
+const BoxerList = await boxerModel.getAll();
+  res.status(200).json(BoxerList);
+***************************************************************************************************
+res.render('template', {
+  locals: {
+    title: '',
+    data: BoxerList
+  },
+  partials: {
+    partial: 'partial-index'}
+  })
+***************************************************************************************************
